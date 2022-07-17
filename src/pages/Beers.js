@@ -39,8 +39,8 @@ export default class BeerList extends React.Component {
           </div>
                                        
       </li>)}
+    <Link to={`/`}><img src={gohome} alt="homepage"/></Link>
     </ul>
-      
       )
     
   }
