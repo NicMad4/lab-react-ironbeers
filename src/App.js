@@ -5,8 +5,9 @@ import BeerList from "./pages/Beers";
 import Home from "./pages/Home";
 import NewBeer from "./pages/New-beer";
 import RandomBeer from "./pages/Random-beer";
-import BeerDetails from "./pages/BeerDetails";
+import ThatBeer from "./pages/ThatBeer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return <div className="App">
@@ -16,7 +17,7 @@ function App() {
           <Route path="/beers" element={<BeerList/>} />
           <Route path="/newBeer" element={<NewBeer/>} />
           <Route path="/randomBeer" element={<RandomBeer />} />
-          <Route path="/beers/:beerId" element={<BeerDetails />} />
+          <Route path="/beers/:beerId" element={<ThatBeer />} />
         </Routes>
       </BrowserRouter>
   </div>;

@@ -19,12 +19,27 @@ export default class BeerList extends React.Component {
   render() {
     return (
       
-      <ul>
+    <ul>
          <Link to={`/`}><img src={gohome} alt="homepage"/></Link>
-        { this.state.beers.map(beer => <li><Link to={`/beers/:beerId`}><img id='beers'
-         src={beer.image_url} alt=""/></Link> <h3>{beer.name}</h3>
-         <p>{beer.tagline}</p><p>Created by:{beer.contributed_by}</p></li>)}
-      </ul>
+        { this.state.beers.map(beer => 
+     <li>
+        <div className="container" key={beer._id}>
+
+        </div>
+        <Link to={`/Beers/${beer._id}`}><img id='beers'
+         src={beer.image_url} alt={beer.name}/></Link>
+        
+         <div className="beersInfo">
+            <h2>{beer.name}</h2> 
+            <h3>{beer.tagline}</h3>
+            
+            <p>{beer.attenuation_level}</p>
+            <p>{beer.description}</p>
+            <p>Created by:{beer.contributed_by}</p>
+          </div>
+                                       
+      </li>)}
+    </ul>
       
       )
     
