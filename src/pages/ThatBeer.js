@@ -40,15 +40,6 @@ function ThatBeer() {
         </div>
       
     </div>
-
-    //  <div>
-    //   <Link to={`/`}><img src={gohome} alt="homepage"/></Link>
-    //   <div key={params.beerId} className="card">
-          
-    //       <p>Price: {thatBeer.name}</p>
-    //     </div>
- 
-    //  </div>
    );
  }
  
