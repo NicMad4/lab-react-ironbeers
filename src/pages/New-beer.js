@@ -106,6 +106,9 @@ function NewBeer() {
         <br></br>
         <button type="submit">Create Apartment</button>
       </form>
+      <br></br>
+      <p>or</p>
+      <Link to={`/`}><img src={gohome} alt="homepage"/></Link>
     </div>
   );
 }
