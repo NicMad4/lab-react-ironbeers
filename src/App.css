@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+#beers{
+  width: 100px;
+}
+#home{
+  text-decoration: none;
+}
